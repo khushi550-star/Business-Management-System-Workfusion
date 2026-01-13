@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: #f8f9fd;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .left-section {
+    flex: 1;
+    background-color: #062b53;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: orange;
+  }
+  .logo-img {
+    width: 300px;        
+    height: auto;
+    margin-bottom: 10px;
+  }
+   .logo p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .signup-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-box h2 {
+    margin-bottom: 10px;
+    color: #062b53;
+  }
+  
+  .signup-box p {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #062b53;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  button[name="reg_user"] {
+    background-color: #0056b3; /* Dark blue */
+    color: white;
+}
+
+button[name="reg_user"]:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.95rem;
+  }
+  .error-msg {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+}

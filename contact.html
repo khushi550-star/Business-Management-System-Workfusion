@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - WorkFusion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+    }
+
+header {
+  background: white;
+  color: white;
+  padding: 15px 40px;
+  position: relative;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+      background: white;
+      position: relative;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #062a50;
+  font-size: large;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.nav-links a:hover {
+  background: #062a50;
+  color: white;
+  border-radius: 20px;
+}
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: #002147;
+      margin: 4px 0;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+    /* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;  /* stack vertically */
+    background: #f9f9f9;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 15px;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;   /* ✅ keep flex so children stack in column */
+  }
+
+  .nav-links a {
+    padding: 10px;
+    display: block;   /* ✅ each link takes full width */
+    text-align: left;
+    margin: 5px 0;
+    color: #002147;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+.section {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+
+.home .btn {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #062b53;
+}
+
+p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+    /* Header / Hero */
+    .contact-header {
+     
+      color: #062b53;
+      text-align: center;
+      padding: 10px 30px;
+    }
+
+    .contact-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 7px;
+    }
+
+    .contact-header p {
+      font-size: 1.1rem;
+    }
+
+    /* Main Section */
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px auto;
+      max-width: 1000px;
+      gap: 10px;
+      padding: 0 10px;
+    }
+
+    /* Form Section */
+    .contact-form {
+      flex: 1;
+      min-width: 100px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .contact-form h2 {
+      color: #00416A;
+      margin-bottom: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 10px;
+      background: #00416A;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #002f4b;
+    }
+
+    /* Info + Map Section */
+    .contact-info-map {
+      flex: 1;
+      min-width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-info {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .contact-info h2 {
+      margin-bottom: 15px;
+      color: #00416A;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .contact-info strong {
+      color: #00416A;
+    }
+
+    .map {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      height: 235px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    
+/* Footer */
+  footer {
+   position: relative;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+  padding: 2px;
+  background: #062b53;
+  color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .contact-header h1 {
+        font-size: 2rem;
+      }
+      .contact-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header and Nav -->
+  <header>
+    <nav class="navbar">
+      
+      <img src="logo.png" alt="WorkFusion Logo" class="logo" />
+      <div class="nav-links" id="navLinks">
+        <ul>
+         <a href="home1.html">Home   </a>
+      <a href="about.html">About   </a>
+      <a href="services.html">Services   </a>
+      <a href="login.php">Login   </a>
+      <a href="signup.php">Sign Up   </a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+        <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      </nav>
+    
+  <!-- Script -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+  </header>
+  <!-- Main Contact Section -->
+  <section class="contact-container">
+    
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+         <input type="hidden" name="access_key" value="18d0ef53-d0c2-4a1a-a16a-80bbbc03496a">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Info + Map -->
+    <div class="contact-info-map">
+      <div class="contact-info">
+        <h2>Our Office</h2>
+        <p><strong>Address:</strong> WorkFusion Prayagraj, India</p>
+         <p><i class="fas fa-phone"></i> +91 9935878994</p>
+      <p><i class="fas fa-envelope"></i> workfusion123@gmail.com</p>
+      <p><i class="fas fa-globe"></i> www.workfusion.com</p>
+      </div>
+      <div class="map">
+        <!-- Google Maps Embed -->
+        <iframe 
+         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d115306.61844298245!2d81.76345387505917!3d25.427167522946625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1756197840933!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          
+         
+        </iframe>
+      </div>
+    </div>
+   
+  </section>
+<br>
+<br>
+   <!-- Footer -->
+  <footer>
+    
+    <p> 2025 WorkFusion. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>

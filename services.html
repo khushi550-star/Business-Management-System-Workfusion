@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WorkFusion | Business Platform</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<style>  
+footer {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+  padding: 2px;
+  background: #062b53;
+  color: white;
+}
+  </style>
+<body>
+
+  <!-- Header and Nav -->
+  <header>
+    <nav class="navbar">
+      
+      <img src="logo.png" alt="WorkFusion Logo" class="logo" />
+      <div class="nav-links" id="navLinks">
+        <ul>
+         <a href="home1.html">Home   </a>
+      <a href="about.html">About   </a>
+      <a href="services.html">Services   </a>
+      <a href="login.php">Login   </a>
+      <a href="signup.php">Sign Up   </a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+        <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      </nav>
+  
+  <!-- Script -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+  </header>
+<br>
+<!-- Our Services Section -->
+<section class="services-section">
+  <div class="services-header">
+    <h2>Our Services</h2>
+    <p>We provide powerful solutions to accelerate your business performance and simplify employee workflows.</p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="icon">💼</div>
+      <h3>Business Management</h3>
+      <p>Streamline operations, track performance, and boost team productivity with smart business tools.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">📊</div>
+      <h3>Analytics & Insights</h3>
+      <p>Gain real-time insights with detailed analytics and dashboards to make smarter decisions.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">👩‍💻</div>
+      <h3>Employee Portal</h3>
+      <p>Centralized access for employees to manage leave, payroll, and personal details efficiently.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">⚙️</div>
+      <h3>Automation</h3>
+      <p>Automate repetitive tasks and workflows to save time and reduce errors.</p>
+    </div>
+    
+  </div>
+ 
+</section>
+<br>
+<br>
+<br>
+<br>
+<!-- Footer -->
+  <footer>
+    
+    <p>2025 WorkFusion. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

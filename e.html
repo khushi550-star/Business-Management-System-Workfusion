@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WorkFusion • Employee Portal</title>
+
+  <!-- Icons & font -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="e.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="logo.png" alt="WorkFusion" class="logo">
+      <span class="divider"></span>
+      <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#"></a>
+        <a href="#">Products</a>
+        <a href="#"></a>
+        <a href="#">  My team</a>
+        <a href="#">  Organization</a>
+        <a href="#"> Requests</a>
+      </nav>
+    </div>
+    <div class="actions">
+      <button class="icon-btn" title="Help"><i class="fa-regular fa-circle-question"></i></button>
+      <button class="icon-btn" title="Notifications"><i class="fa-regular fa-bell"></i></button>
+      <div class="avtar" title="Profile">KS</div>
+    </div>
+  </header>
+
+  <!-- Hero / banner -->
+  <section class="hero">
+    <div class="hero__text">
+      <h1>Welcome back to the office, Khushii...!</h1>
+      <p>We've got resources to re‑introduce you to your hybrid workplace.</p>
+      
+    </div>
+    <figure class="hero__art">
+      <!-- Replace with your image if you want -->
+      <img src="a1.jpg" alt="Workplace">
+    </figure>
+  </section>
+
+  <!-- Quick circular shortcuts -->
+  <section class="quickbar card">
+    <div class="quick">
+      <button class="quick__item" data-tip="Working time tracking">
+        <span class="quick__icon"><i class="fa-regular fa-clock"></i></span>
+        <span class="quick__label">Working time tracking</span>
+      </button>
+      <button class="quick__item" data-tip="Attendance">
+        <span class="quick__icon"><i class="fa-regular fa-calendar-check"></i></span>
+        <span class="quick__label">Attendance</span>
+      </button>
+      <button class="quick__item" data-tip="Payslips">
+        <span class="quick__icon"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+        <span class="quick__label">Payslips</span>
+      </button>
+    
+      <button class="quick__item" data-tip="support request">
+        <span class="quick__icon"><i class="fa-regular fa-id-card"></i></span>
+        <span class="quick__label">support request</span>
+      </button>
+      <button class="quick__item" data-tip="Tasks or Projects">
+        <span class="quick__icon"><i class="fa-regular fa-lightbulb"></i></span>
+        <span class="quick__label">Tasks or Projects</span>
+      </button>
+      <button class="quick__item" data-tip="Meetings">
+        <span class="quick__icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+        <span class="quick__label">Meetings</span>
+      </button>
+      <button class="quick__item" data-tip="News">
+        <span class="quick__icon"><i class="fa-regular fa- fa-newspaper"></i></span>
+        <span class="quick__label">News</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Main two-column content -->
+  <main class="grid">
+    <!-- Left column -->
+    <div class="col-left">
+      <!-- Search -->
+      <section class="card search">
+        <h3>How can we help?</h3>
+        <div class="search__box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="searchInput" type="text" placeholder="What are you looking for?" />
+        </div>
+      </section>
+
+      <!-- My applications -->
+      <section class="card apps">
+        <div class="card__head">
+          <h3>My applications</h3>
+          <div class="tabs" role="tablist">
+         
+          </div>
+        </div>
+
+        <!-- All -->
+        <div class="apps__grid tabpanel is-active" id="apps-all" role="tabpanel">
+          <div class="app">
+           
+            <img src="outlook.png" alt="">
+            <p>Outlook</p>
+          </div>
+          <div class="app">
+          
+            <img src="linkedin.png" alt="">
+            <p>LinkedIn</p>
+          </div>
+          <div class="app">
+           
+            <img src="Microsoft-Teams.png" alt="">
+            <p>MS Teams</p>
+          </div>
+          <div class="app">
+          
+            <img src="expense.png" alt="">
+            <p>Expenses</p>
+          </div>
+          <div class="app">
+           
+            <img src="Workday.png" alt="">
+            <p>Workday</p>
+          </div>
+          <div class="app">
+           
+            <img src="zoom.png" alt="">
+            <p>Zoom</p>
+          </div>
+        </div>
+        
+        
+      </section>
+
+      <!-- my Team-->
+      <section class="card My Team">
+       
+
+      <!-- Popular topics -->
+      <section class="card topics">
+        <h3>Popular topics</h3>
+        <div class="topic__row">
+          <button class="topic"><span class="topic__icon"><i class="fa-regular fa-folder-open"></i></span>My data</button>
+          <button class="topic"><span class="topic__icon"><i class="fa-regular fa-user"></i></span>My personal data</button>
+          <button class="topic"><span class="topic__icon"><i class="fa-regular fa-heart"></i></span>Life events</button>
+          <button class="topic"><span class="topic__icon"><i class="fa-regular fa-id-badge"></i></span>Profiles</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Right column -->
+    <aside class="col-right">
+      <!-- My to-dos -->
+      <section class="card todos">
+        <h3>My to-dos</h3>
+        <div class="statline">
+          <div class="stat"><span class="num">1</span> Task</div>
+          <div class="stat"><span class="num">9+</span> Requests</div>
+          <div class="stat"><span class="num">2</span> Surveys</div>
+        </div>
+
+       
+      </section>
+
+      <!-- Upcoming events -->
+      <section class="card events">
+        <h3>Upcoming events</h3>
+
+        <div class="event">
+          <div>
+            <div class="evt-title">Our Monthly Briefing</div>
+            <div class="muted">Jun 23 09:00 SGT</div>
+          </div>
+          <button class="link"><i class="fa-regular fa-calendar-plus"></i> Add to calendar</button>
+        </div>
+
+        <div class="event">
+          <div>
+            <div class="evt-title">Company retreat</div>
+            <div class="muted">Jun 28 – Jun 29</div>
+          </div>
+          <button class="link"><i class="fa-regular fa-calendar-plus"></i> Add to calendar</button>
+        </div>
+
+        <div class="event">
+          <div>
+            <div class="evt-title">After work drinks</div>
+            <div class="muted">Jul 2 18:00 SGT</div>
+          </div>
+          <button class="link"><i class="fa-regular fa-calendar-plus"></i> Add to calendar</button>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <script src="e.js"></script>
+</body>
+</html>
